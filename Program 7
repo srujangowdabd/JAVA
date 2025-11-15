@@ -1,0 +1,33 @@
+7. Find the largest of three numbers
+public class Largest {
+    public static void main(String[] args) {
+        int a = 10, b = 25, c = 15;
+        if (a >= b && a >= c)
+            System.out.println("Largest: " + a);
+        else if (b >= a && b >= c)
+            System.out.println("Largest: " + b);
+        else
+System.out.println("Largest: " + c);
+    }
+}
+import java.util.Scanner;
+public class Largest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Taking 3 numbers as input
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+        System.out.print("Enter third number: ");
+        int c = sc.nextInt();
+        // Checking largest number
+        if (a >= b && a >= c)
+            System.out.println("Largest: " + a);
+        else if (b >= a && b >= c)
+            System.out.println("Largest: " + b);
+        else
+            System.out.println("Largest: " + c);
+        sc.close(); // Closing Scanner
+    }
+}
