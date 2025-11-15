@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ArithmeticOperators {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input two integers
+        System.out.print("Enter first integer: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second integer: ");
+        int b = sc.nextInt();
+
+        // Perform operations
+        int sum = a + b;
+        int diff = a - b;
+        int prod = a * b;
+        int quotient = a / b;     // Assumes b != 0
+        int remainder = a % b;    // Assumes b != 0
+
+        // Display results
+        System.out.println("Sum = " + sum);
+        System.out.println("Difference = " + diff);
+        System.out.println("Product = " + prod);
+        System.out.println("Quotient = " + quotient);
+        System.out.println("Remainder = " + remainder);
+
+        sc.close();
+    }
+}
