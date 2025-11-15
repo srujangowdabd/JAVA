@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TernaryEvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input number
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // Ternary operator
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+
+        // Output
+        System.out.println("The number is: " + result);
+
+        sc.close();
+    }
+}
